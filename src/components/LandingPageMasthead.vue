@@ -17,7 +17,7 @@
                 >
                     <font-awesome
                         v-bind:icon="['fab', 'instagram']"
-                        size="2x"
+                        size="lg"
                     />
                 </a>
                 <a
@@ -27,7 +27,7 @@
                 >
                     <font-awesome
                         v-bind:icon="['fab', 'facebook-square']"
-                        size="2x"
+                        size="lg"
                     />
                 </a>
             </span>
@@ -93,7 +93,7 @@
         display: flex;
         justify-content: space-between;
         margin: 1rem 0;
-        width: 4.5rem;
+        width: 3.5rem;
     }
 
     .socialLinks {
@@ -155,9 +155,23 @@
 
     @media only screen and (max-width: 414px) {
         .containerMasthead {
-            background-position-x: 37%;
-            background-position-y: -130px;
-            height: 75vh;
+            background-size: contain;
+            background-position: unset;
+            height: 100%;
+            min-height: 16.5rem;
+        }
+
+        .logoContainer {
+            padding-top: 1rem;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 10rem;
+        }
+
+        .socialIcons {
+            width: 3rem;
         }
 
         .formText {
