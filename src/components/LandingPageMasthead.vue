@@ -43,7 +43,7 @@
         background-image:
             url("../assets/kelsey-horner-photo.jpg"),
             linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, .1));
-        background-position: center 0 bottom 10rem;
+        background-position: center;
         background-repeat:  no-repeat;
         background-attachment: fixed;
         background-size:  cover;
@@ -69,6 +69,7 @@
         flex-direction: column;
         height: 75%;
         justify-content: center;
+        text-align: center;
     }
 
     .welcomeText {
@@ -109,7 +110,54 @@
         font-size: 1rem;
         letter-spacing: .1rem;
         margin: 0;
-        width: 24rem;
+        width: 100%;
+        max-width: 24rem;
         text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .welcomeText {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 567px) {
+        .containerMasthead {
+            background-position: bottom right 66%;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 14rem;
+        }
+
+        .welcomeText {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .underConstructionText {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 1rem;
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        .formText {
+            font-size: .875rem;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .containerMasthead {
+            background-position: bottom 200px right 66%;
+            height: 75vh;
+        }
+
+        .formText {
+            width: 100%;
+            max-width: 14rem;
+        }
     }
 </style>
