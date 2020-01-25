@@ -39,6 +39,8 @@
 </template>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap');
+
     .containerMasthead {
         background-image:
             url("../assets/kelsey-horner-photo.jpg"),
@@ -59,7 +61,9 @@
     }
 
     .logo {
-        width: 20rem;
+        width: 100%;
+        height: 100%;
+        max-width: 20rem;
     }
 
     .containerText {
@@ -73,8 +77,8 @@
     }
 
     .welcomeText {
-        font-family: 'Quentin';
-        font-size: 3.5rem;
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 4rem;
         letter-spacing: .5rem;
         margin: 0 0 -.5rem;
     }
