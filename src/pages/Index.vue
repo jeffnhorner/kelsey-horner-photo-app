@@ -9,7 +9,7 @@
 
     export default {
         metaInfo: {
-            title: 'Hello, world!'
+            title: 'Traveling Wedding Photogorapher based in Houston Texas | Kelsey Horner Photography'
         },
 
         components: {
