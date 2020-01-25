@@ -155,7 +155,8 @@
 
     @media only screen and (max-width: 414px) {
         .containerMasthead {
-            background-position: bottom 200px right 66%;
+            background-position-x: 37%;
+            background-position-y: -130px;
             height: 75vh;
         }
 
