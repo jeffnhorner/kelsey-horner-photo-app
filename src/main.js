@@ -6,6 +6,20 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Vue from 'vue'
+import VueMq from 'vue-mq'
+
+Vue.use(VueMq, {
+    breakpoints: {
+        // default breakpoints - customize this
+        xs: 414,
+        sm: 567,
+        md: 768,
+        lg: 1028,
+        xl: 1440,
+        xxl: Infinity
+    }
+});
 
 config.autoAddCss = false;
 library.add(faFacebookSquare, faInstagram);
