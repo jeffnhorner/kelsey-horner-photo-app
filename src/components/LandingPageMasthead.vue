@@ -1,17 +1,21 @@
 <template>
     <section>
-        <div v-bind:class="{ 'containerMasthead' : !isHandheld }">
+        <div v-bind:class="[,
+                { 'containerMasthead' : !isHandheld },
+                { 'containerMastheadMobile' : isHandheld }
+            ]
+        ">
             <span class="logoContainer">
                 <g-image
                     src="~/assets/kh-logo-white.png"
                     class="logo"
                 />
             </span>
+            <g-image
+                src="~/assets/kelsey-horner-photo.jpg"
+                class="mobilePhoto"
+            />
             <div class="containerText">
-                <g-image
-                    src="~/assets/kelsey-horner-photo.jpg"
-                    class="mobilePhoto"
-                />
                 <h3 class="welcomeText">good things take time</h3>
                 <p class="underConstructionText">website under construction</p>
                 <span class="socialIcons">
@@ -110,7 +114,7 @@
 
     .underConstructionText {
         font-size: 1.5rem;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
         margin: 0;
     }
 
@@ -155,9 +159,14 @@
             height: 28rem;
         }
 
+        .containerMastheadMobile {
+            height: 100%;
+        }
+
         .mobilePhoto {
             display: block;
             height: auto;
+            margin-top: -5rem;
             position: absolute;
             width: 43rem;
             z-index: -1;
@@ -181,7 +190,6 @@
 
         .logoContainer {
             padding-top: 2rem;
-            margin-bottom: 2rem;
         }
 
         .logo {
@@ -190,7 +198,7 @@
         }
 
         .containerText {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .welcomeText {
@@ -218,9 +226,13 @@
             background-size: cover;
         }
 
+        .underConstructionText {
+            letter-spacing: .15rem;
+        }
+
         .formText {
             width: 100%;
-            max-width: 14rem;
+            max-width: 17rem;
         }
     }
 </style>
