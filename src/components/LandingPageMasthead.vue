@@ -41,7 +41,7 @@
                     </a>
                 </span>
                 <p class="formText">
-                    please fill out the form below and we’ll get back to you within 48 hours.
+                    please fill out the form below and we’ll get back to you within 48 hours!
                 </p>
             </div>
         </div>
