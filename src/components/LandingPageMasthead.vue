@@ -161,6 +161,8 @@
 
         .containerMastheadMobile {
             height: 100%;
+            overflow: hidden;
+            position: relative;
         }
 
         .mobilePhoto {
