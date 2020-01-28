@@ -202,7 +202,7 @@
         }
 
         .welcomeText {
-            font-size: 1.75rem;
+            font-size: 1.85rem;
             text-align: center;
         }
 
