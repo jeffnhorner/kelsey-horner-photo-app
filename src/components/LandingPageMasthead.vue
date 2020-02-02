@@ -50,10 +50,6 @@
 
 <script>
     export default {
-        created () {
-            console.log(this.$mq);
-        },
-
         computed: {
             isHandheld () {
                 return this.$mq === 'xs' || this.$mq === 'sm';
