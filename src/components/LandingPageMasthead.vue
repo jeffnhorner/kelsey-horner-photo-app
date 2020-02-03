@@ -60,6 +60,7 @@
 
 <style scoped>
     @font-face {
+        font-family: 'Quentin';
         src: url("../assets/fonts/Quentin.otf");
     }
 
