@@ -59,7 +59,9 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap');
+    @font-face {
+        src: url("../assets/fonts/Quentin.otf");
+    }
 
     @media only screen and (min-width: 567px) {
         .mobilePhoto {
@@ -103,7 +105,7 @@
     }
 
     .welcomeText {
-        font-family: 'Quentin', 'Mr Dafoe', cursive;
+        font-family: 'Quentin', cursive;
         font-size: 4rem;
         margin: 0 0 -.5rem;
     }
